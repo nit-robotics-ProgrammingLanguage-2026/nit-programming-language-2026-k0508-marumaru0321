@@ -2,7 +2,7 @@
 
 int main(void)
 {
-    int n;
+    int n,a=0;
     scanf("%d", &n);
     if (n < 0 && n != 0)/* TODO: 課題0508 */
     {
@@ -13,17 +13,19 @@ int main(void)
         if (n%3 == 0 && n != 0)
         {
         printf("Up");
+                a = a + 1;
         }
         if (n%5 == 0 && n != 0)
         {
         printf("Go");
+                a = a + 1;
         }
         if (n%7 == 0 && n != 0)
         {
         printf("!!");
+        a = a + 1;
         }
- 
-        else
+        if (a >0)
     {
         printf("No");
     }
