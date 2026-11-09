@@ -4,6 +4,29 @@ int main(void)
 {
     int n;
     scanf("%d", &n);
-    /* TODO: 課題0508 */
+    if (n < 0 && n != 0)/* TODO: 課題0508 */
+    {
+        printf("Error");
+    }
+    else 
+    {
+        if (n%3 == 0 && n != 0)
+        {
+        printf("Up");
+        }
+        if (n%5 == 0 && n != 0)
+        {
+        printf("Go");
+        }
+        if (n%7 == 0 && n != 0)
+        {
+        printf("!!");
+        }
+ 
+        else
+    {
+        printf("No");
+    }
+}
     return 0;
 }
